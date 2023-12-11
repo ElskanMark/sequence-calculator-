@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence Calculator</title>
+    <link rel="stylesheet" href="sequence calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="calculator">
+        <h1>Sequence Calculator</h1>
+
+        <div class="input-container">
+            <label for="sequenceType">Select Sequence Type:</label>
+            <select id="sequenceType">
+                <option value="fibonacci">Fibonacci</option>
+                <option value="tribonacci">Tribonacci</option>
+                <option value="lucas">Lucas</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+            <label for="inputNumber">Enter Sequence Length:</label>
+            <input type="number" id="inputNumber" min="1" placeholder="Enter a number">
+        </div>
+
+        <button onclick="calculateSequence()">Calculate Sequence</button>
+
+        <div id="output" class="output-container"></div>
+    </div>
+
+    <script src="sequence calculator.js"></script>
+</body>
+</html>
